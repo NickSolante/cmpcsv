@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Core></Core>
   </div>
 </template>
 
 <script>
-import Papa from "papaparse";
-import BootstrapVue from "bootstrap-vue";
+import Core from "./components/Core";
+import Vue from 'vue';
+import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
@@ -16,7 +16,7 @@ Vue.use(BootstrapVue);
 export default {
   name: "app",
   components: {
-    HelloWorld
+    Core
   }
 };
 </script>
